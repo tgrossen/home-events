@@ -4,7 +4,7 @@ using System.Data;
 using Npgsql;
 using Dapper;
 
-namespace Common.Infrastructure {
+namespace common.Infrastructure {
     public interface IPostgresConnection {
         IDbConnection Connection { get; }
     }

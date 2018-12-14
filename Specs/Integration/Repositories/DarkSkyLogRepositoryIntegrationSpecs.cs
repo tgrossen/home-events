@@ -4,10 +4,10 @@ using DarkSky.Models;
 using Should;
 using Newtonsoft.Json;
 
-using Common.DarkSky;
-using Specs.TestUtilities;
+using common.DarkSky;
+using specs.TestUtilities;
 
-namespace Specs.Integration.Repositories
+namespace specs.Integration.Repositories
 {
     [TestFixture]
     public class DarkSkyRepositoryIntegrationSpecs : With_an_integration_setup<DarkSkyLogRepository>

@@ -2,11 +2,11 @@ using System;
 using StructureMap;
 using Microsoft.Extensions.Configuration;
 
-using Api.Configuration;
-using Common.Infrastructure;
-using Common.DarkSky;
+using api.Configuration;
+using common.Infrastructure;
+using common.DarkSky;
 
-namespace Api.DependencyInjection {
+namespace api.DependencyInjection {
     public class ApiRegistry : Registry {
         public ApiRegistry()
         {

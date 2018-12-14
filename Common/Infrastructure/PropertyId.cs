@@ -1,6 +1,6 @@
 using System;
 
-namespace Common.Infrastructure {
+namespace common.Infrastructure {
     public enum PropertyId {
         OliveSpgs = 0
     }

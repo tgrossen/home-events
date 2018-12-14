@@ -1,9 +1,9 @@
 using System;
-using Common.Infrastructure;
+using common.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using StructureMap;
 
-namespace Specs.Integration {
+namespace specs.Integration {
     public class IntegrationRegistry : Registry
     {
         public IntegrationRegistry()

@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using StructureMap;
 
-namespace Specs.Integration {
+namespace specs.Integration {
     [TestFixture]
     public class With_an_integration_setup<T> : IDisposable {
         protected static T ClassUnderTest;

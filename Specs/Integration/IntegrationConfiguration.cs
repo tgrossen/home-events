@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.Extensions.Configuration;
 
-namespace Specs.Integration
+namespace specs.Integration
 {
     public class IntegrationConfigurationBuilder
     {

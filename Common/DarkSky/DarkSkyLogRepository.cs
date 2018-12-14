@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using Common.Infrastructure;
+using common.Infrastructure;
 using System.Data;
 using Dapper;
 using Newtonsoft.Json;
 
-namespace Common.DarkSky {
+namespace common.DarkSky {
     public class DarkSkyLogRepository : IInternalRepository<DarkSkyLog> {
         readonly IPostgresConnection postgresConnection;
         public DarkSkyLogRepository(IPostgresConnection postgresConnection)

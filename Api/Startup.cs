@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StructureMap;
 
-using Api.DependencyInjection;
+using api.DependencyInjection;
 
 namespace api
 {

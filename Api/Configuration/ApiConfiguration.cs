@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.Extensions.Configuration;
 
-namespace Api.Configuration
+namespace api.Configuration
 {
     public class ApiConfigurationBuilder
     {

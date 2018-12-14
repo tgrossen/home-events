@@ -5,7 +5,7 @@ using System.Reflection;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
-namespace Specs.TestUtilities
+namespace specs.TestUtilities
 {
     public static class ShouldExtensions
     {

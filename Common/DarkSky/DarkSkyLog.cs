@@ -1,9 +1,9 @@
 using System;
-using Common.Infrastructure;
+using common.Infrastructure;
 using DarkSky.Models;
 using Newtonsoft.Json;
 
-namespace Common.DarkSky {
+namespace common.DarkSky {
     public class DarkSkyLog : InternalObject {
         public Forecast Data { get; set; }
         public static DarkSkyLog FromRepositoryLogEntity(RepositoryLogEntity repositoryLogEntity) {

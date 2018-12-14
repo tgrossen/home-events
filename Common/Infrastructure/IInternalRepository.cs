@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Common.Infrastructure
+namespace common.Infrastructure
 {
     public class RepositoryLogEntity : InternalObject {
         public string Data { get; set; }

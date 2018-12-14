@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-using Common.DarkSky;
-using Common.Infrastructure;
+using common.DarkSky;
+using common.Infrastructure;
 
 namespace api.Controllers
 {
