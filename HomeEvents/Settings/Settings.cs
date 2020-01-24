@@ -11,6 +11,7 @@ namespace HomeEvents.Settings
         string PostgresUsername { get; }
         string PostgresPassword { get; }
         string PostgresDatabase { get; }
+        string MiniPonicsImagesBaseFilePath { get; }
     }
 
     public class HomeEventsSettings : IHomeEventsSettings
@@ -26,10 +27,11 @@ namespace HomeEvents.Settings
             config = builder.Build();
         }
 
-        public string PostgresHost => config.GetSection("Postgres").GetValue<string>("Host");
-        public int PostgresPort => config.GetSection("Postgres").GetValue<int>("Port");
-        public string PostgresUsername => config.GetSection("Postgres").GetValue<string>("Username");
-        public string PostgresPassword => config.GetSection("Postgres").GetValue<string>("Password");
-        public string PostgresDatabase => config.GetSection("Postgres").GetValue<string>("Database");
+        public string PostgresHost => config.GetSection("Postgres").GetRequiredSetting<string>("Host");
+        public int PostgresPort => config.GetSection("Postgres").GetRequiredSetting<int>("Port");
+        public string PostgresUsername => config.GetSection("Postgres").GetRequiredSetting<string>("Username");
+        public string PostgresPassword => config.GetSection("Postgres").GetRequiredSetting<string>("Password");
+        public string PostgresDatabase => config.GetSection("Postgres").GetRequiredSetting<string>("Database");
+        public string MiniPonicsImagesBaseFilePath => config.GetSection("MiniPonics").GetRequiredSetting<string>("ImagesBaseFilePath");
     }
 }

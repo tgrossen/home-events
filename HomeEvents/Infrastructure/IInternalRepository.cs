@@ -11,7 +11,7 @@ namespace HomeEvents.Infrastructure
     public interface IInternalRepository<T> where T : InternalObject
     {
         Task Save(T record);
-        Task<DarkSkyLog> GetLatest();
-        Task<IList<DarkSkyLog>> GetLatestHistoryInRange(TimeSpan duration);
+        Task<T> GetLatest();
+        Task<IList<T>> GetLatestInRange(TimeSpan duration);
     }
 }

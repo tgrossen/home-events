@@ -17,13 +17,13 @@ namespace HomeEvents.Api.Controllers
 
         [HttpGet]
         [Produces("application/json")]
-        public async Task<ActionResult<string>> GetLatest()
+        public async Task<IActionResult> GetLatest()
         {
             return Ok(await darkSkyLogRepository.GetLatest());
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] DarkSkyLog forecast)
+        public async Task<IActionResult> Post([FromBody] DarkSkyLog forecast)
         {
             await darkSkyLogRepository.Save(forecast);
             return NoContent();

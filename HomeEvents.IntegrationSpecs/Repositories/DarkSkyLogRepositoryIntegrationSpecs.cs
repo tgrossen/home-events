@@ -6,6 +6,7 @@ using Machine.Specifications;
 
 namespace HomeEvents.IntegrationSpecs.Repositories
 {
+    [Subject(typeof(DarkSkyLogRepository))]
     public class When_round_tripping_dark_sky_logs : With_an_integration_setup<DarkSkyLogRepository>
     {
         Establish context = () =>

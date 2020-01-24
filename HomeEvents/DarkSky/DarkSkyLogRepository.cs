@@ -17,7 +17,7 @@ namespace HomeEvents.DarkSky {
 
         public async Task Save(DarkSkyLog record)
         {
-            var query = $"INSERT INTO dark_sky_log (event_date, property_id, data) VALUES (@eventDate, @propertyId, @data::json)";
+            var query = "INSERT INTO dark_sky_log (event_date, property_id, data) VALUES (@eventDate, @propertyId, @data::json)";
             await postgresConnection.ExecuteAsync(query, new { eventDate = record.EventDate, propertyId = record.PropertyId, data = JsonConvert.SerializeObject(record.Data) });
         }
 
@@ -27,7 +27,7 @@ namespace HomeEvents.DarkSky {
             return DarkSkyLog.FromRepositoryLogEntity(result);
         }
 
-        public Task<IList<DarkSkyLog>> GetLatestHistoryInRange(TimeSpan duration)
+        public Task<IList<DarkSkyLog>> GetLatestInRange(TimeSpan duration)
         {
             throw new NotImplementedException();
         }
