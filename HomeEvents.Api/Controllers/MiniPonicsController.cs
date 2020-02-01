@@ -29,6 +29,7 @@ namespace HomeEvents.Api.Controllers
         [HttpPost, DisableRequestSizeLimit]
         public async Task<IActionResult> ImagePost()
         {
+            Console.WriteLine("Getting request");
             try
             {
                 var imagesBaseFilePath = settings.MiniPonicsImagesBaseFilePath;
